@@ -4,7 +4,7 @@ var sw = System.Diagnostics.Stopwatch.StartNew();
 
 //AdventOfCode.Day10Year2020.Main();
 
-Day12.Main();
+Day13.Main();
 
 sw.Stop();
 Console.WriteLine($"Time elapsed: {sw.ElapsedMilliseconds} ms");
