@@ -10,7 +10,7 @@ namespace AdventOfCode.Year2021
     {
         internal static void Main()
         {
-            var lines = File.ReadAllLines("Year2021/Day1_lines.txt").Select(x => Convert.ToInt32(x)).ToArray();
+            var lines = File.ReadAllLines("Year2021/Day1_Input.txt").Select(x => Convert.ToInt32(x)).ToArray();
 
             #region Part1
             //var increased = 0;
@@ -25,7 +25,7 @@ namespace AdventOfCode.Year2021
 
             #region Part2
             var windows = new List<int>();
-            for (int i = 0; i < lines.Length-2; i++)
+            for (int i = 0; i < lines.Length - 2; i++)
             {
                 var window = lines[i] + lines[i + 1] + lines[i + 2];
                 windows.Add(window);

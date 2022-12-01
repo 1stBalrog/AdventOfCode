@@ -45,7 +45,7 @@ namespace AdventOfCode.Year2021
             #region Part2
             var aim = 0;
 
-            foreach(var line in lines)
+            foreach (var line in lines)
             {
                 var split = line.Split(' ');
 
