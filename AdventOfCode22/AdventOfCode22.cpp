@@ -2,15 +2,15 @@
 
 #include <iostream>
 #include <string>
-#include "Day01.cpp"
+#include "Day02.cpp"
 
 using namespace std;
 
 int main()
 {
-    cout << "Hello World!\n";
+    cout << "Hello Advent of Code!\n";
 
-    Day01 d;
+    Day d;
     d.Solve();
 
     string bar;
