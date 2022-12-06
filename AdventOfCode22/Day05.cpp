@@ -43,7 +43,7 @@ public:
             }
         }
 
-        int stackCount = (stackList[0].size() + 1) / 4;
+        size_t stackCount = (stackList[0].size() + 1) / 4;
         vector<vector<char>> stacks;
         for (size_t i = 0; i < stackCount; i++)
         {
@@ -54,7 +54,7 @@ public:
         for (size_t i = stackList.size() - 1; i > 0; i--)
         {
             string line = stackList[i - 1];
-            int size = line.size() + 1;
+            size_t size = line.size() + 1;
             for (size_t j = 0; j < size / 4; j++)
             {
                 char part = line.substr(j * 4, 2)[1];
@@ -117,7 +117,7 @@ public:
             }
         }
 
-        int stackCount = (stackList[0].size() + 1) / 4;
+        size_t stackCount = (stackList[0].size() + 1) / 4;
         vector<vector<char>> stacks;
         for (size_t i = 0; i < stackCount; i++)
         {
@@ -128,7 +128,7 @@ public:
         for (size_t i = stackList.size() - 1; i > 0; i--)
         {
             string line = stackList[i - 1];
-            int size = line.size() + 1;
+            size_t size = line.size() + 1;
             for (size_t j = 0; j < size / 4; j++)
             {
                 char part = line.substr(j * 4, 2)[1];
@@ -160,12 +160,6 @@ public:
             {
                 stacks[destin].push_back(cranePick[j - 1]);
             }
-
-            //for (size_t j = 0; j < amount; j++)
-            //{
-            //    stacks[destin].push_back(stacks[origin][stacks[origin].size() - 1]);
-            //    stacks[origin].pop_back();
-            //}
         }
 
         string result;
@@ -179,8 +173,8 @@ public:
 
     void splitString(string str, string delimiter, vector<string>& out)
     {
-        int start = 0;
-        int end = str.find(delimiter);
+        size_t start = 0;
+        size_t end = str.find(delimiter);
         while (end != -1)
         {
             out.push_back(str.substr(start, end - start));

@@ -25,13 +25,13 @@ public:
         string line;
         while (getline(infile, line))
         {
-            int seperator = line.find(',', 0);
+            size_t seperator = line.find(',', 0);
 
             string part1 = line.substr(0, seperator);
             string part2 = line.substr(seperator + 1, line.length() - seperator);
 
-            int seperator1 = part1.find('-');
-            int seperator2 = part2.find('-');
+            size_t seperator1 = part1.find('-');
+            size_t seperator2 = part2.find('-');
 
             int first1 = stoi(part1.substr(0, seperator1));
             int first2 = stoi(part1.substr(seperator1 + 1, part1.length() - seperator1));
@@ -60,13 +60,13 @@ public:
         string line;
         while (getline(infile, line))
         {
-            int seperator = line.find(',', 0);
+            size_t seperator = line.find(',', 0);
 
             string part1 = line.substr(0, seperator);
             string part2 = line.substr(seperator + 1, line.length() - seperator);
 
-            int seperator1 = part1.find('-');
-            int seperator2 = part2.find('-');
+            size_t seperator1 = part1.find('-');
+            size_t seperator2 = part2.find('-');
 
             int first1 = stoi(part1.substr(0, seperator1));
             int first2 = stoi(part1.substr(seperator1 + 1, part1.length() - seperator1));

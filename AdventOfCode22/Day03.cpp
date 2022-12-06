@@ -25,7 +25,7 @@ public:
         string line;
         while (getline(infile, line))
         {
-            int half = line.length() / 2;
+            size_t half = line.length() / 2;
 
             string first = line.substr(0, half);
             string second = line.substr(half, half);
@@ -33,7 +33,7 @@ public:
             for (size_t i = 0; i < first.length(); i++)
             {
                 char c = first[i];
-                int found = second.find(c, 0);
+                size_t found = second.find(c, 0);
                 if (found == -1)
                 {
                     continue;
@@ -73,7 +73,7 @@ public:
 
         for (size_t i = 0; i < list.size(); i += 3)
         {
-            int half = line.length() / 2;
+            size_t half = line.length() / 2;
 
             string first = list[i];
             string second = list[i + 1];
@@ -82,8 +82,8 @@ public:
             for (size_t j = 0; j < first.length(); j++)
             {
                 char c = first[j];
-                int found1 = second.find(c, 0);
-                int found2 = third.find(c, 0);
+                size_t found1 = second.find(c, 0);
+                size_t found2 = third.find(c, 0);
                 if (found1 == -1 || found2 == -1)
                 {
                     continue;

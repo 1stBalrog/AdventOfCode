@@ -2,7 +2,7 @@
 
 #include <iostream>
 #include <string>
-#include "Day05.cpp"
+#include "Day06.cpp"
 
 using namespace std;
 
