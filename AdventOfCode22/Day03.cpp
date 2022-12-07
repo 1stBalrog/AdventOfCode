@@ -19,7 +19,7 @@ public:
 
     void Part1()
     {
-        std::ifstream infile("Day03.txt");
+        ifstream infile("Day03.txt");
 
         int current = 0;
         string line;
@@ -61,7 +61,7 @@ public:
 
     void Part2()
     {
-        std::ifstream infile("Day03.txt");
+        ifstream infile("Day03.txt");
 
         int current = 0;
         string line;

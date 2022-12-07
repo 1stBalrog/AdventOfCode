@@ -19,7 +19,7 @@ public:
 
     void Part1()
     {
-        std::ifstream infile("Day05.txt");
+        ifstream infile("Day05.txt");
 
         string line;
         bool instructions = false;
@@ -93,7 +93,7 @@ public:
 
     void Part2()
     {
-        std::ifstream infile("Day05.txt");
+        ifstream infile("Day05.txt");
 
         string line;
         bool instructions = false;

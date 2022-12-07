@@ -19,7 +19,7 @@ public:
 
     void Part1()
     {
-        std::ifstream infile("Day01.txt");
+        ifstream infile("Day01.txt");
 
         vector<int> list;
         int current = 0;
@@ -51,7 +51,7 @@ public:
 
     void Part2()
     {
-        std::ifstream infile("Day01.txt");
+        ifstream infile("Day01.txt");
 
         vector<int> list;
         int current = 0;
