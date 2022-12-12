@@ -91,7 +91,6 @@ public:
         Operation buffer{};
         buffer.CycleCount = 0;
         buffer.Value = 0;
-        int total = 0;
         int current = 1;
         int cycle = -1;
         bool eol = false;
@@ -104,6 +103,7 @@ public:
             if ((++cycle) % 40 == 0)
             {
                 cycle = 0;
+                cout << endl;
             }
 
             if (buffer.CycleCount == 0)
@@ -134,15 +134,24 @@ public:
                 }
             }
 
-            buffer.CycleCount--;
+            if (current - 1 == cycle || current == cycle || current + 1 == cycle)
+            {
+                cout << "#";
+            }
+            else
+            {
+                cout << ".";
+            }
 
+            //End of cycle
+            buffer.CycleCount--;
             if (buffer.CycleCount == 0)
             {
                 current += buffer.Value;
             }
         }
 
-        cout << total;
+        cout << endl;
     }
 
     class Operation
